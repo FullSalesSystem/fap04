@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treinamento Comercial Full Sales — Time de Alta Performance</title>
+  <meta name="description" content="O treinamento definitivo para transformar seu time comercial em uma máquina de vendas. Aprenda o método Full Sales de prospecção, abordagem e fechamento." />
+  <meta property="og:title" content="Treinamento Comercial Full Sales — Time de Alta Performance" />
+  <meta property="og:description" content="O treinamento definitivo para transformar seu time comercial em uma máquina de vendas." />
+  <link rel="icon" href="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1059FF;
+      --blue-dark: #0040CC;
+      --blue-navy: #00175E;
+      --blue-glow: rgba(16, 89, 255, 0.07);
+      --bg-deep: #ffffff;
+      --bg-dark: #F0F4FF;
+      --bg-card: #ffffff;
+      --bg-card2: #E8EEFF;
+      --border: rgba(16, 89, 255, 0.12);
+      --border-blue: rgba(16, 89, 255, 0.3);
+      --text-primary: #0A0A1A;
+      --text-muted: #4A5470;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-deep);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 88px 0; }
+.tag {
+      display: inline-block;
+      background: var(--blue-glow);
+      border: 1px solid var(--border-blue);
+      color: var(--blue);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1rem, 2vw, 1.45rem);
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .section-title .blue { color: var(--blue); }
+
+    .divider { width: 44px; height: 3px; background: var(--blue); border-radius: 2px; margin: 18px 0; }
+    .divider--center { margin-left: auto; margin-right: auto; }
+.btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 36px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .btn--blue {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(16,89,255,0.22);
+    }
+    .btn--blue:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(16,89,255,0.32);
+      color: #fff;
+    }
+    .btn--ghost {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid rgba(0,0,0,0.18);
+    }
+    .btn--ghost:hover { border-color: var(--blue); background: var(--blue-glow); color: var(--blue); }
+    .btn--lg { font-size: 1.1rem; padding: 18px 48px; }
+    .btn--full { width: 100%; }
+.reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal--d1 { transition-delay: 0.08s; }
+    .reveal--d2 { transition-delay: 0.16s; }
+    .reveal--d3 { transition-delay: 0.24s; }
+    .reveal--d4 { transition-delay: 0.32s; }
+    .reveal--d5 { transition-delay: 0.40s; }
+    .reveal--d6 { transition-delay: 0.48s; }
+.navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+    .navbar-logo img { height: 36px; width: auto; }
+    .navbar-cta { font-size: 0.85rem; padding: 10px 22px; }
+.hero {
+      position: relative;
+      min-height: 640px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      overflow: hidden;
+      background: var(--bg-dark);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(16,89,255,0.06), transparent);
+      pointer-events: none;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 0;
+      gap: 0;
+    }
+    .hero-video {
+      width: 100%;
+      max-width: 860px;
+      margin-bottom: 0;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16,89,255,0.10);
+      border: 1px solid var(--border-blue);
+      color: var(--blue);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 22px;
+    }
+    .hero-badge .pulse {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+      animation: blink 1.8s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+
+    .hero-headline-wrap {
+      width: 100%;
+      background: var(--blue);
+      padding: 20px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(0.9rem, 1.9vw, 1.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+      max-width: 560px;
+    }
+    .hero-info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+      justify-content: center;
+    }
+    .hero-info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .hero-info-item svg { color: var(--blue); flex-shrink: 0; }
+.hero-cta-area {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .hero-cta-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+      font-weight: 800;
+      line-height: 1.25;
+      text-align: center;
+    }
+    .hero-cta-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 500px;
+    }
+    .hero-spots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .hero-spots .dot { width: 7px; height: 7px; background: #22c55e; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+.who-section { background: var(--bg-deep); }
+    .who-header { text-align: center; margin-bottom: 56px; }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .who-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 22px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .who-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 20px; right: 20px;
+      height: 2px;
+      background: var(--blue);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .who-card:hover { border-color: var(--border-blue); transform: translateY(-4px); }
+    .who-card:hover::after { opacity: 1; }
+    .who-icon { font-size: 2rem; margin-bottom: 14px; line-height: 1; }
+    .who-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .who-desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.65; }
+.pain-section {
+      background: var(--bg-dark);
+      position: relative;
+    }
+    .pain-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: radial-gradient(ellipse 60% 100% at 50% 100%, rgba(16,89,255,0.04), transparent);
+      pointer-events: none;
+    }
+    .pain-intro { max-width: 100%; margin-bottom: 48px; text-align: center; }
+    .pain-intro .section-title { margin-bottom: 10px; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .pain-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .pain-item:hover { border-color: var(--border-blue); transform: translateY(-2px); }
+    .pain-x {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: rgba(255, 77, 77, 0.1);
+      border: 2px solid rgba(255, 77, 77, 0.35);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 0.65rem;
+      font-weight: 900;
+      color: #e53e3e;
+    }
+    .pain-item p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+    .pain-callout {
+      margin-top: 36px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .pain-callout p { font-size: 1rem; color: var(--text-muted); line-height: 1.75; }
+    .pain-callout p + p { margin-top: 16px; }
+    .pain-callout strong { color: var(--text-primary); }
+    .pain-cta { text-align: center; margin-top: 32px; }
+.bridge-section {
+      background: var(--blue-navy);
+      padding: 72px 0;
+    }
+    .bridge-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .bridge-inner p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .bridge-inner p strong { color: #fff; }
+    .bridge-inner .section-title { color: #fff; margin-bottom: 24px; font-size: clamp(1.2rem, 2.5vw, 1.8rem); }
+    .bridge-inner .divider { background: rgba(255,255,255,0.4); }
+.modules-section { background: var(--bg-deep); }
+    .modules-header { text-align: center; margin-bottom: 56px; }
+    .modules-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .module-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .module-item:hover { border-color: var(--border-blue); transform: translateX(4px); }
+    .module-number {
+      width: 44px; height: 44px;
+      background: var(--blue-glow);
+      border: 1.5px solid var(--border-blue);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--blue);
+      flex-shrink: 0;
+    }
+    .module-content { flex: 1; }
+    .module-day {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+    .module-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .module-desc { font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; }
+    .module-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .module-tag {
+      display: inline-block;
+      background: var(--blue-glow);
+      border: 1px solid var(--border-blue);
+      color: var(--blue);
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+    .modules-cta { text-align: center; margin-top: 48px; }
+.benefits-section { background: var(--bg-dark); }
+    .benefits-header { text-align: center; margin-bottom: 56px; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .benefit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 22px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .benefit-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 20px; right: 20px;
+      height: 2px;
+      background: var(--blue);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .benefit-card:hover { border-color: var(--border-blue); transform: translateY(-4px); }
+    .benefit-card:hover::after { opacity: 1; }
+    .benefit-icon { font-size: 1.8rem; margin-bottom: 14px; line-height: 1; }
+    .benefit-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .benefit-desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.65; }
+    .benefits-cta { text-align: center; margin-top: 48px; }
+.instructor-section {
+      background: var(--blue-navy);
+      padding: 88px 0;
+    }
+    .instructor-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .instructor-photo-wrap {
+      position: relative;
+    }
+    .instructor-photo {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      border: 2px solid rgba(255,255,255,0.12);
+      display: block;
+      margin: 0 auto;
+    }
+    .instructor-photo-placeholder {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 4/5;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 2px dashed rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 3rem;
+    }
+    .instructor-badge-wrap {
+      position: absolute;
+      bottom: -16px;
+      right: 16px;
+      background: var(--blue);
+      border-radius: 12px;
+      padding: 12px 16px;
+      box-shadow: 0 8px 24px rgba(16,89,255,0.4);
+    }
+    .instructor-badge-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .instructor-badge-text {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.3;
+      margin-top: 2px;
+    }
+    .instructor-content .tag {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.8);
+    }
+    .instructor-name {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .instructor-role {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    .instructor-divider { background: rgba(255,255,255,0.25); margin-bottom: 20px; }
+    .instructor-bio {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.8;
+    }
+    .instructor-bio + .instructor-bio { margin-top: 14px; }
+    .instructor-stats {
+      display: flex;
+      gap: 24px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .instructor-stat { text-align: left; }
+    .instructor-stat-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .instructor-stat-label {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 3px;
+    }
+.testimonials-section { background: var(--bg-dark); padding-top: 64px; }
+    .testimonials-header { text-align: center; margin-bottom: 56px; }
+    .testi-carousel-wrap { position: relative; }
+    .testi-carousel {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding-bottom: 8px;
+    }
+    .testi-carousel::-webkit-scrollbar { display: none; }
+    .testi-card {
+      flex: 0 0 320px;
+      scroll-snap-align: start;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 20px;
+      transition: border-color 0.2s;
+    }
+    .testi-card:hover { border-color: var(--border-blue); }
+    .testi-stars { color: #F59E0B; font-size: 0.85rem; margin-bottom: 12px; letter-spacing: 2px; }
+    .testi-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--blue-glow);
+      border: 1.5px solid var(--border-blue);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .testi-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .testi-role { font-size: 0.73rem; color: var(--text-muted); }
+    .testi-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .testi-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border-blue);
+      background: var(--bg-card);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, border-color 0.2s;
+      color: var(--blue);
+    }
+    .testi-btn:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+.faq-section { background: var(--bg-deep); }
+    .faq-header { text-align: center; margin-bottom: 56px; }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-item.open { border-color: var(--border-blue); }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      cursor: pointer;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      user-select: none;
+    }
+    .faq-question:hover { color: var(--blue); }
+    .faq-icon {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--blue-glow);
+      border: 1px solid var(--border-blue);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.25s, background 0.2s;
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--blue); color: #fff; border-color: var(--blue); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+    }
+    .faq-item.open .faq-answer { max-height: 400px; }
+    .faq-answer-inner {
+      padding: 0 20px 18px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+.final-cta {
+      background: var(--blue);
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(255,255,255,0.05), transparent);
+      pointer-events: none;
+    }
+    .final-cta-inner {
+      max-width: 660px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .final-cta .section-title { color: #fff; font-size: clamp(1.3rem, 2.6vw, 2rem); margin-bottom: 16px; }
+    .final-cta p { font-size: 1rem; color: rgba(255,255,255,0.82); line-height: 1.8; margin-bottom: 32px; }
+    .final-cta .btn--white {
+      background: #fff;
+      color: var(--blue);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    }
+    .final-cta .btn--white:hover {
+      background: #f0f5ff;
+      color: var(--blue-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .final-spots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.65);
+      margin-top: 14px;
+    }
+    .final-spots .dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+.footer {
+      background: var(--text-primary);
+      padding: 48px 0 36px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+    .footer-logo img { height: 32px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+@media (max-width: 900px) {
+      .who-grid { grid-template-columns: 1fr 1fr; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; }
+      .instructor-inner { grid-template-columns: 1fr; gap: 40px; }
+      .instructor-photo-placeholder { max-width: 280px; }
+      .instructor-badge-wrap { right: calc(50% - 140px + 16px); bottom: -12px; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 64px 0; }
+      .who-grid { grid-template-columns: 1fr; }
+      .pain-items { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .hero-headline-wrap { padding: 18px 20px; }
+      .hero-cta-area { padding: 32px 16px 48px; }
+      .testi-card { flex: 0 0 280px; }
+      .instructor-stats { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" alt="Full Sales System" />
+      </a>
+      <a href="#inscricao" class="btn btn--blue navbar-cta">Garantir minha vaga</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <span class="hero-badge reveal"><span class="pulse"></span> Treinamento Exclusivo · Vagas Limitadas</span>
+
+      <div class="hero-video reveal reveal--d1">
+        <div id="vid_PLACEHOLDER" style="position:relative;width:100%;padding:56.25% 0 0;background:#000;border-radius:12px 12px 0 0;overflow:hidden;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00175E 0%,#0047CC 100%);">
+            <div style="text-align:center;color:rgba(255,255,255,0.5);">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="31" stroke="rgba(255,255,255,0.2)" stroke-width="2"/><polygon points="26,20 50,32 26,44" fill="rgba(255,255,255,0.7)"/></svg>
+              <p style="margin-top:12px;font-size:0.8rem;font-family:'Inter',sans-serif;">Player de vídeo — a ser configurado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-headline-wrap reveal reveal--d2">
+      <p class="hero-title">
+        Transforme seu time comercial em uma máquina de vendas de alta performance com o método Full Sales
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="hero-cta-area reveal reveal--d3">
+        <p class="hero-cta-title">Treinamento Intensivo para o <span style="color:var(--blue)">Time Comercial Full Sales</span></p>
+        <p class="hero-cta-sub">5 dias de imersão prática para dominar prospecção, abordagem, gestão de objeções e fechamento de vendas.</p>
+        <div class="hero-info-row reveal reveal--d4">
+          <span class="hero-info-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            5 dias de conteúdo
+          </span>
+          <span class="hero-info-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Ao vivo + gravado
+          </span>
+          <span class="hero-info-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Vagas limitadas
+          </span>
+          <span class="hero-info-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Certificado incluso
+          </span>
+        </div>
+        <a href="#inscricao" class="btn btn--blue btn--lg reveal reveal--d5" id="inscricao">Quero garantir minha vaga agora</a>
+        <div class="hero-spots reveal reveal--d6"><span class="dot"></span> Apenas 30 vagas disponíveis para esta turma</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-section section">
+    <div class="container">
+      <div class="who-header reveal">
+        <span class="tag">Para quem é</span>
+        <h2 class="section-title">Este treinamento foi feito <span class="blue">para você</span> que...</h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="who-grid">
+        <div class="who-card reveal reveal--d1">
+          <div class="who-icon">🎯</div>
+          <p class="who-name">Vendedor ativo</p>
+          <p class="who-desc">Quer dominar técnicas avançadas de prospecção e abordagem para bater metas consistentemente todos os meses.</p>
+        </div>
+        <div class="who-card reveal reveal--d2">
+          <div class="who-icon">📈</div>
+          <p class="who-name">Gestor comercial</p>
+          <p class="who-desc">Busca metodologia sólida para treinar e elevar o nível do seu time, reduzindo o tempo de ramp-up de novos vendedores.</p>
+        </div>
+        <div class="who-card reveal reveal--d3">
+          <div class="who-icon">🚀</div>
+          <p class="who-name">SDR / Pré-vendas</p>
+          <p class="who-desc">Precisa qualificar leads com mais eficiência e gerar oportunidades reais que chegam prontas para o fechamento.</p>
+        </div>
+        <div class="who-card reveal reveal--d1">
+          <div class="who-icon">💼</div>
+          <p class="who-name">Closer / Executivo de vendas</p>
+          <p class="who-desc">Quer quebrar objeções com segurança, aumentar a taxa de conversão e elevar o ticket médio das negociações.</p>
+        </div>
+        <div class="who-card reveal reveal--d2">
+          <div class="who-icon">🏆</div>
+          <p class="who-name">Novo integrante do time</p>
+          <p class="who-desc">Acabou de entrar na equipe e quer absorver rapidamente a cultura, o processo e as melhores práticas da Full Sales.</p>
+        </div>
+        <div class="who-card reveal reveal--d3">
+          <div class="who-icon">🔄</div>
+          <p class="who-name">Profissional em transição</p>
+          <p class="who-desc">Vem de outra área e quer estruturar uma carreira sólida em vendas B2B com base em método comprovado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pain-section section">
+    <div class="container">
+      <div class="pain-intro reveal">
+        <span class="tag">Diagnóstico real</span>
+        <h2 class="section-title">Você já se encontrou em alguma<br><span class="blue">dessas situações?</span></h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="pain-items">
+        <div class="pain-item reveal reveal--d1">
+          <div class="pain-x">✕</div>
+          <p>Dificuldade para prospectar leads qualificados e manter o funil abastecido com oportunidades reais.</p>
+        </div>
+        <div class="pain-item reveal reveal--d2">
+          <div class="pain-x">✕</div>
+          <p>Perde vendas no final do ciclo por não saber lidar com objeções como "preciso pensar" ou "está caro".</p>
+        </div>
+        <div class="pain-item reveal reveal--d3">
+          <div class="pain-x">✕</div>
+          <p>Metas inconsistentes: bate um mês, fica muito abaixo no outro, sem previsibilidade de receita.</p>
+        </div>
+        <div class="pain-item reveal reveal--d4">
+          <div class="pain-x">✕</div>
+          <p>Não tem um script de abordagem estruturado e improvisa nas ligações, perdendo confiança e conexão.</p>
+        </div>
+        <div class="pain-item reveal reveal--d1">
+          <div class="pain-x">✕</div>
+          <p>Processo de onboarding lento: novos vendedores demoram meses para atingir a performance esperada.</p>
+        </div>
+        <div class="pain-item reveal reveal--d2">
+          <div class="pain-x">✕</div>
+          <p>Falta de clareza nas métricas e KPIs: não sabe identificar onde exatamente está perdendo negócios.</p>
+        </div>
+      </div>
+      <div class="pain-callout reveal">
+        <p><strong>Se você identificou pelo menos um desses cenários</strong>, este treinamento foi desenhado exatamente para resolver esses gargalos na raiz.</p>
+      </div>
+      <div class="pain-cta reveal">
+        <a href="#inscricao" class="btn btn--blue btn--lg">Quero resolver esses problemas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bridge-section">
+    <div class="container">
+      <div class="bridge-inner reveal">
+        <h2 class="section-title">O que muda depois do<br>Treinamento Full Sales?</h2>
+        <div class="divider divider--center"></div>
+        <p>Em <strong>5 dias intensivos</strong>, você vai deixar de lado o improviso e construir uma base sólida de técnicas, scripts e processos que funcionam no mundo real.</p>
+        <p>Não é teoria genérica. É o <strong>método que a Full Sales usa</strong> para escalar times comerciais com previsibilidade e consistência — agora estruturado num treinamento acessível para qualquer membro da equipe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modules-section section">
+    <div class="container">
+      <div class="modules-header reveal">
+        <span class="tag">Conteúdo do treinamento</span>
+        <h2 class="section-title">5 dias para transformar sua<br><span class="blue">performance em vendas</span></h2>
+        <div class="divider divider--center"></div>
+        <p style="font-size:0.95rem;color:var(--text-muted);max-width:560px;margin:0 auto;">Cada módulo foi estruturado para gerar resultado prático imediato — do primeiro contato ao fechamento.</p>
+      </div>
+      <div class="modules-list">
+        <div class="module-item reveal reveal--d1">
+          <div class="module-number">01</div>
+          <div class="module-content">
+            <p class="module-day">Dia 1</p>
+            <p class="module-title">Mentalidade e Fundamentos de Alta Performance</p>
+            <p class="module-desc">Construa a base psicológica do vendedor de alto nível: gestão de metas, rotina produtiva, mindset de crescimento e como se preparar para qualquer negociação.</p>
+            <div class="module-tags">
+              <span class="module-tag">Mentalidade</span>
+              <span class="module-tag">Rotina</span>
+              <span class="module-tag">Metas</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-item reveal reveal--d2">
+          <div class="module-number">02</div>
+          <div class="module-content">
+            <p class="module-day">Dia 2</p>
+            <p class="module-title">Prospecção Inteligente e Geração de Pipeline</p>
+            <p class="module-desc">Aprenda a identificar o ICP (perfil ideal de cliente), dominar cold call, cold email e social selling para manter o funil sempre abastecido com leads qualificados.</p>
+            <div class="module-tags">
+              <span class="module-tag">Prospecção</span>
+              <span class="module-tag">Cold Call</span>
+              <span class="module-tag">ICP</span>
+              <span class="module-tag">LinkedIn</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-item reveal reveal--d3">
+          <div class="module-number">03</div>
+          <div class="module-content">
+            <p class="module-day">Dia 3</p>
+            <p class="module-title">Abordagem, Qualificação e Diagnóstico Comercial</p>
+            <p class="module-desc">Domine o primeiro contato, conduza reuniões de descoberta eficientes com o método SPIN e qualifique oportunidades com precisão para não desperdiçar tempo.</p>
+            <div class="module-tags">
+              <span class="module-tag">SPIN Selling</span>
+              <span class="module-tag">Qualificação</span>
+              <span class="module-tag">Reunião de Vendas</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-item reveal reveal--d4">
+          <div class="module-number">04</div>
+          <div class="module-content">
+            <p class="module-day">Dia 4</p>
+            <p class="module-title">Gestão de Objeções e Negociação de Alto Valor</p>
+            <p class="module-desc">Aprenda a antecipar e neutralizar as principais objeções (preço, tempo, concorrente, decisor) e conduza negociações que preservam margens e geram valor para o cliente.</p>
+            <div class="module-tags">
+              <span class="module-tag">Objeções</span>
+              <span class="module-tag">Negociação</span>
+              <span class="module-tag">Ticket Médio</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-item reveal reveal--d5">
+          <div class="module-number">05</div>
+          <div class="module-content">
+            <p class="module-day">Dia 5</p>
+            <p class="module-title">Fechamento, Follow-up e Construção de Carteira</p>
+            <p class="module-desc">Técnicas de fechamento sem pressão, construção de um processo de follow-up que converte e como gerar recorrência e indicações para crescer sua carteira de forma sustentável.</p>
+            <div class="module-tags">
+              <span class="module-tag">Fechamento</span>
+              <span class="module-tag">Follow-up</span>
+              <span class="module-tag">Recorrência</span>
+              <span class="module-tag">Indicações</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modules-cta reveal">
+        <a href="#inscricao" class="btn btn--blue btn--lg">Quero participar do treinamento</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section section">
+    <div class="container">
+      <div class="benefits-header reveal">
+        <span class="tag">O que você leva</span>
+        <h2 class="section-title">Tudo que você vai receber ao<br><span class="blue">se inscrever hoje</span></h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal reveal--d1">
+          <div class="benefit-icon">🎓</div>
+          <p class="benefit-name">5 aulas ao vivo</p>
+          <p class="benefit-desc">Sessões diárias de 1h30 com conteúdo denso, exercícios práticos e sessão de perguntas e respostas ao final de cada dia.</p>
+        </div>
+        <div class="benefit-card reveal reveal--d2">
+          <div class="benefit-icon">🎥</div>
+          <p class="benefit-name">Gravações para sempre</p>
+          <p class="benefit-desc">Acesse todas as gravações das aulas sem prazo de expiração. Revise o conteúdo quando precisar, no seu ritmo.</p>
+        </div>
+        <div class="benefit-card reveal reveal--d3">
+          <div class="benefit-icon">📋</div>
+          <p class="benefit-name">Scripts e templates prontos</p>
+          <p class="benefit-desc">Scripts de prospecção, e-mails de follow-up, roteiros de reunião e templates de proposta para usar imediatamente.</p>
+        </div>
+        <div class="benefit-card reveal reveal--d1">
+          <div class="benefit-icon">💬</div>
+          <p class="benefit-name">Grupo exclusivo no WhatsApp</p>
+          <p class="benefit-desc">Acesso ao grupo de alunos para networking, troca de experiências e suporte da equipe Full Sales durante o treinamento.</p>
+        </div>
+        <div class="benefit-card reveal reveal--d2">
+          <div class="benefit-icon">📊</div>
+          <p class="benefit-name">Dashboard de métricas</p>
+          <p class="benefit-desc">Planilha estruturada para acompanhar seus KPIs, taxa de conversão e identificar gargalos no seu processo comercial.</p>
+        </div>
+        <div class="benefit-card reveal reveal--d3">
+          <div class="benefit-icon">🏅</div>
+          <p class="benefit-name">Certificado de conclusão</p>
+          <p class="benefit-desc">Certificado digital da Full Sales System ao concluir o treinamento — reconhecimento do seu desenvolvimento profissional.</p>
+        </div>
+      </div>
+      <div class="benefits-cta reveal">
+        <a href="#inscricao" class="btn btn--blue btn--lg">Quero todos esses benefícios</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="instructor-section">
+    <div class="container">
+      <div class="instructor-inner">
+        <div class="instructor-photo-wrap reveal">
+          <div class="instructor-photo-placeholder">👤</div>
+          <div class="instructor-badge-wrap">
+            <p class="instructor-badge-num">+500</p>
+            <p class="instructor-badge-text">times treinados<br>em todo Brasil</p>
+          </div>
+        </div>
+        <div class="instructor-content reveal reveal--d2">
+          <span class="tag">Seu instrutor</span>
+          <h2 class="instructor-name">[Nome do Instrutor]</h2>
+          <p class="instructor-role">Fundador & Head de Treinamento · Full Sales System</p>
+          <div class="divider instructor-divider"></div>
+          <p class="instructor-bio">
+            Com mais de 10 anos de experiência em vendas B2B, construiu e liderou times comerciais em empresas de diferentes segmentos — do SaaS ao mercado imobiliário.
+          </p>
+          <p class="instructor-bio">
+            Criou o método Full Sales após identificar os principais gargalos que impedem times comerciais de atingir consistência. Hoje, ajuda empresas a estruturar processos de vendas escaláveis e previsíveis.
+          </p>
+          <div class="instructor-stats">
+            <div class="instructor-stat">
+              <p class="instructor-stat-num">R$ 50M+</p>
+              <p class="instructor-stat-label">em vendas geradas pelos alunos</p>
+            </div>
+            <div class="instructor-stat">
+              <p class="instructor-stat-num">2.000+</p>
+              <p class="instructor-stat-label">vendedores treinados</p>
+            </div>
+            <div class="instructor-stat">
+              <p class="instructor-stat-num">98%</p>
+              <p class="instructor-stat-label">de aprovação nas turmas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section section">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="tag">Depoimentos</span>
+        <h2 class="section-title">O que dizem quem já<br><span class="blue">passou pelo treinamento</span></h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="testi-carousel-wrap reveal">
+        <div class="testi-carousel" id="testiCarousel">
+          <div class="testi-card">
+            <p class="testi-stars">★★★★★</p>
+            <p class="testi-text">"Apliquei os scripts de prospecção no mesmo dia e consegui 3 reuniões qualificadas em 48 horas. O conteúdo é extremamente prático e direto ao ponto."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">😊</div>
+              <div>
+                <p class="testi-name">Carlos Mendes</p>
+                <p class="testi-role">Executivo de Vendas · São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <p class="testi-stars">★★★★★</p>
+            <p class="testi-text">"Como gestora, finalmente tenho uma linguagem comum com todo o time. O dashboard de métricas transformou nossas reuniões de pipeline. Recomendo demais!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">👩</div>
+              <div>
+                <p class="testi-name">Fernanda Lima</p>
+                <p class="testi-role">Gerente Comercial · Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <p class="testi-stars">★★★★★</p>
+            <p class="testi-text">"Aumentei minha taxa de conversão de 12% para 28% em dois meses depois do treinamento. O módulo de objeções valeu por todo o investimento."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">🧑</div>
+              <div>
+                <p class="testi-name">Ricardo Oliveira</p>
+                <p class="testi-role">SDR · Curitiba, PR</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <p class="testi-stars">★★★★★</p>
+            <p class="testi-text">"Era cético com treinamentos online, mas esse mudou minha visão. Conteúdo denso, instrutor acessível e comunidade muito engajada. Vale cada centavo."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">👨</div>
+              <div>
+                <p class="testi-name">Thiago Santos</p>
+                <p class="testi-role">Closer · Florianópolis, SC</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <p class="testi-stars">★★★★★</p>
+            <p class="testi-text">"Entrei na empresa há 3 meses e esse treinamento me deu o embasamento que precisava para entrar no ritmo do time muito mais rápido."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">👩‍💼</div>
+              <div>
+                <p class="testi-name">Juliana Costa</p>
+                <p class="testi-role">Pré-vendas · Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-nav">
+          <button class="testi-btn" id="testiPrev" aria-label="Anterior">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="testi-btn" id="testiNext" aria-label="Próximo">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section section">
+    <div class="container">
+      <div class="faq-header reveal">
+        <span class="tag">Perguntas frequentes</span>
+        <h2 class="section-title">Tire suas <span class="blue">dúvidas</span></h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            Para quem é esse treinamento?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O treinamento é voltado para membros do time comercial da Full Sales em qualquer nível — SDRs, closers, executivos de conta e gestores. Também é ideal para profissionais que estão migrando para a área de vendas e querem uma base sólida desde o início.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal--d1">
+          <div class="faq-question">
+            As aulas são ao vivo ou gravadas?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              As aulas acontecem ao vivo durante os 5 dias do treinamento, com sessão de perguntas ao final de cada encontro. Todas as aulas são gravadas e ficam disponíveis para revisão sem prazo de expiração.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal--d2">
+          <div class="faq-question">
+            Qual é a carga horária total do treinamento?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Cada dia tem 1h30 de aula ao vivo, totalizando 7h30 de conteúdo direto. Além disso, há materiais complementares, scripts e exercícios práticos para aplicar entre os módulos.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal--d3">
+          <div class="faq-question">
+            Preciso ter experiência em vendas para participar?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Não é necessário ter experiência prévia. O treinamento começa pelos fundamentos e avança para técnicas avançadas, sendo adequado tanto para iniciantes quanto para profissionais experientes que querem sistematizar seu processo.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal--d4">
+          <div class="faq-question">
+            Vou receber certificado ao concluir?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! Ao completar o treinamento, você recebe um certificado digital da Full Sales System que pode ser adicionado ao seu LinkedIn e currículo, comprovando sua qualificação em vendas de alta performance.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal--d5">
+          <div class="faq-question">
+            Como acesso o grupo exclusivo e os materiais?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Após a confirmação da inscrição, você recebe um e-mail com o link de acesso ao grupo do WhatsApp e à área de membros onde estarão disponíveis todos os scripts, templates e gravações das aulas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="final-cta-inner reveal">
+        <span class="tag" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:#fff;">Última chamada</span>
+        <h2 class="section-title">Pronto para elevar o nível do seu time comercial?</h2>
+        <p>Garanta agora sua vaga no treinamento e comece a transformação que vai tornar você e sua equipe referência em vendas de alta performance.</p>
+        <a href="#inscricao" class="btn btn--white btn--lg">Garantir minha vaga agora</a>
+        <div class="final-spots"><span class="dot"></span> Vagas limitadas · Não perca essa turma</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" alt="Full Sales System" />
+        </div>
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+        </div>
+        <p class="footer-copy">© 2025 Full Sales System. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+    const carousel = document.getElementById('testiCarousel');
+    document.getElementById('testiNext').addEventListener('click', () => {
+      carousel.scrollBy({ left: 338, behavior: 'smooth' });
+    });
+    document.getElementById('testiPrev').addEventListener('click', () => {
+      carousel.scrollBy({ left: -338, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
