@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Treinamento Comercial Full Sales — Time de Alta Performance</title>
-  <meta name="description" content="O treinamento definitivo para transformar seu time comercial em uma máquina de vendas. Aprenda o método Full Sales de prospecção, abordagem e fechamento." />
-  <meta property="og:title" content="Treinamento Comercial Full Sales — Time de Alta Performance" />
-  <meta property="og:description" content="O treinamento definitivo para transformar seu time comercial em uma máquina de vendas." />
-  <link rel="icon" href="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" />
+  <title>Treinamento Comercial Full Sales â Time de Alta Performance</title>
+  <meta name="description" content="O treinamento definitivo para transformar seu time comercial em uma mÃ¡quina de vendas. Aprenda o mÃ©todo Full Sales de prospecÃ§Ã£o, abordagem e fechamento." />
+  <meta property="og:title" content="Treinamento Comercial Full Sales â Time de Alta Performance" />
+  <meta property="og:description" content="O treinamento definitivo para transformar seu time comercial em uma mÃ¡quina de vendas." />
+  <link rel="icon" href="LOGO-(Azul)---Full-Sales.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -15,16 +15,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --blue: #1059FF;
-      --blue-dark: #0040CC;
-      --blue-navy: #00175E;
-      --blue-glow: rgba(16, 89, 255, 0.07);
+      --blue: #EF0835;
+      --blue-dark: #8F001C;
+      --blue-navy: #1A0A0E;
+      --blue-glow: rgba(239, 8, 53, 0.07);
       --bg-deep: #ffffff;
-      --bg-dark: #F0F4FF;
+      --bg-dark: #FEF5F7;
       --bg-card: #ffffff;
-      --bg-card2: #E8EEFF;
-      --border: rgba(16, 89, 255, 0.12);
-      --border-blue: rgba(16, 89, 255, 0.3);
+      --bg-card2: #FFE8EC;
+      --border: rgba(239, 8, 53, 0.12);
+      --border-blue: rgba(239, 8, 53, 0.3);
       --text-primary: #0A0A1A;
       --text-muted: #4A5470;
     }
@@ -759,14 +759,63 @@
       .testi-card { flex: 0 0 280px; }
       .instructor-stats { gap: 16px; }
     }
+  
+    /* === PRÉ-VÍDEO: ocultar conteúdo === */
+    #pre-video-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    #pre-video-screen > img.pvs-logo {
+      height: 64px;
+      width: auto;
+      margin-bottom: 36px;
+    }
+    #pre-video-screen .hero-video {
+      width: 100%;
+      max-width: 780px;
+    }
+    #sim-btn {
+      display: block;
+      margin: 18px auto 0;
+      padding: 9px 22px;
+      background: rgba(239,8,53,0.10);
+      color: #EF0835;
+      border: 1px solid rgba(239,8,53,0.3);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-family: inherit;
+    }
+    .post-video-locked { display: none !important; }
+    .post-video-locked.unlocked { display: revert !important; animation: fadeInUp 0.6s ease forwards; }
+    .navbar.post-video-locked.unlocked { display: flex !important; }
+    footer.post-video-locked.unlocked { display: block !important; }
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(18px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
   </style>
 </head>
 <body>
 
-  <nav class="navbar">
+  <!-- TELA PRÉ-VÍDEO -->
+  <div id="pre-video-screen">
+    <img class="pvs-logo" src="LOGO-(Azul)---Full-Sales.png" alt="Full Sales System" />
+    <!-- O hero-video será movido aqui via JS -->
+  </div>
+
+
+  <nav class="navbar post-video-locked">
     <div class="container">
       <a href="#" class="navbar-logo">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" alt="Full Sales System" />
+        <img src="LOGO-(Azul)---Full-Sales.png" alt="Full Sales System" />
       </a>
       <a href="#inscricao" class="btn btn--blue navbar-cta">Garantir minha vaga</a>
     </div>
@@ -775,34 +824,29 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container">
-      <span class="hero-badge reveal"><span class="pulse"></span> Treinamento Exclusivo · Vagas Limitadas</span>
+      <span class="hero-badge reveal post-video-locked"><span class="pulse"></span> Treinamento Exclusivo Â· Vagas Limitadas</span>
 
       <div class="hero-video reveal reveal--d1">
         <div id="vid_PLACEHOLDER" style="position:relative;width:100%;padding:56.25% 0 0;background:#000;border-radius:12px 12px 0 0;overflow:hidden;">
-          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00175E 0%,#0047CC 100%);">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1A0A0E 0%,#0047CC 100%);">
             <div style="text-align:center;color:rgba(255,255,255,0.5);">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="31" stroke="rgba(255,255,255,0.2)" stroke-width="2"/><polygon points="26,20 50,32 26,44" fill="rgba(255,255,255,0.7)"/></svg>
-              <p style="margin-top:12px;font-size:0.8rem;font-family:'Inter',sans-serif;">Player de vídeo — a ser configurado</p>
+              <p style="margin-top:12px;font-size:0.8rem;font-family:'Inter',sans-serif;">Player de vÃ­deo â a ser configurado</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hero-headline-wrap reveal reveal--d2">
-      <p class="hero-title">
-        Transforme seu time comercial em uma máquina de vendas de alta performance com o método Full Sales
-      </p>
-    </div>
+    
 
-    <div class="container">
-      <div class="hero-cta-area reveal reveal--d3">
+    <div class="container post-video-locked"><div class="hero-cta-area reveal reveal--d3">
         <p class="hero-cta-title">Treinamento Intensivo para o <span style="color:var(--blue)">Time Comercial Full Sales</span></p>
-        <p class="hero-cta-sub">5 dias de imersão prática para dominar prospecção, abordagem, gestão de objeções e fechamento de vendas.</p>
+        <p class="hero-cta-sub">5 dias de imersÃ£o prÃ¡tica para dominar prospecÃ§Ã£o, abordagem, gestÃ£o de objeÃ§Ãµes e fechamento de vendas.</p>
         <div class="hero-info-row reveal reveal--d4">
           <span class="hero-info-item">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            5 dias de conteúdo
+            5 dias de conteÃºdo
           </span>
           <span class="hero-info-item">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -818,88 +862,88 @@
           </span>
         </div>
         <a href="#inscricao" class="btn btn--blue btn--lg reveal reveal--d5" id="inscricao">Quero garantir minha vaga agora</a>
-        <div class="hero-spots reveal reveal--d6"><span class="dot"></span> Apenas 30 vagas disponíveis para esta turma</div>
+        <div class="hero-spots reveal reveal--d6"><span class="dot"></span> Apenas 30 vagas disponÃ­veis para esta turma</div>
       </div>
     </div>
   </section>
 
-  <section class="who-section section">
+  <section class="who-section post-video-locked section">
     <div class="container">
       <div class="who-header reveal">
-        <span class="tag">Para quem é</span>
-        <h2 class="section-title">Este treinamento foi feito <span class="blue">para você</span> que...</h2>
+        <span class="tag">Para quem Ã©</span>
+        <h2 class="section-title">Este treinamento foi feito <span class="blue">para vocÃª</span> que...</h2>
         <div class="divider divider--center"></div>
       </div>
       <div class="who-grid">
         <div class="who-card reveal reveal--d1">
-          <div class="who-icon">🎯</div>
+          <div class="who-icon">ð¯</div>
           <p class="who-name">Vendedor ativo</p>
-          <p class="who-desc">Quer dominar técnicas avançadas de prospecção e abordagem para bater metas consistentemente todos os meses.</p>
+          <p class="who-desc">Quer dominar tÃ©cnicas avanÃ§adas de prospecÃ§Ã£o e abordagem para bater metas consistentemente todos os meses.</p>
         </div>
         <div class="who-card reveal reveal--d2">
-          <div class="who-icon">📈</div>
+          <div class="who-icon">ð</div>
           <p class="who-name">Gestor comercial</p>
-          <p class="who-desc">Busca metodologia sólida para treinar e elevar o nível do seu time, reduzindo o tempo de ramp-up de novos vendedores.</p>
+          <p class="who-desc">Busca metodologia sÃ³lida para treinar e elevar o nÃ­vel do seu time, reduzindo o tempo de ramp-up de novos vendedores.</p>
         </div>
         <div class="who-card reveal reveal--d3">
-          <div class="who-icon">🚀</div>
-          <p class="who-name">SDR / Pré-vendas</p>
-          <p class="who-desc">Precisa qualificar leads com mais eficiência e gerar oportunidades reais que chegam prontas para o fechamento.</p>
+          <div class="who-icon">ð</div>
+          <p class="who-name">SDR / PrÃ©-vendas</p>
+          <p class="who-desc">Precisa qualificar leads com mais eficiÃªncia e gerar oportunidades reais que chegam prontas para o fechamento.</p>
         </div>
         <div class="who-card reveal reveal--d1">
-          <div class="who-icon">💼</div>
+          <div class="who-icon">ð¼</div>
           <p class="who-name">Closer / Executivo de vendas</p>
-          <p class="who-desc">Quer quebrar objeções com segurança, aumentar a taxa de conversão e elevar o ticket médio das negociações.</p>
+          <p class="who-desc">Quer quebrar objeÃ§Ãµes com seguranÃ§a, aumentar a taxa de conversÃ£o e elevar o ticket mÃ©dio das negociaÃ§Ãµes.</p>
         </div>
         <div class="who-card reveal reveal--d2">
-          <div class="who-icon">🏆</div>
+          <div class="who-icon">ð</div>
           <p class="who-name">Novo integrante do time</p>
-          <p class="who-desc">Acabou de entrar na equipe e quer absorver rapidamente a cultura, o processo e as melhores práticas da Full Sales.</p>
+          <p class="who-desc">Acabou de entrar na equipe e quer absorver rapidamente a cultura, o processo e as melhores prÃ¡ticas da Full Sales.</p>
         </div>
         <div class="who-card reveal reveal--d3">
-          <div class="who-icon">🔄</div>
-          <p class="who-name">Profissional em transição</p>
-          <p class="who-desc">Vem de outra área e quer estruturar uma carreira sólida em vendas B2B com base em método comprovado.</p>
+          <div class="who-icon">ð</div>
+          <p class="who-name">Profissional em transiÃ§Ã£o</p>
+          <p class="who-desc">Vem de outra Ã¡rea e quer estruturar uma carreira sÃ³lida em vendas B2B com base em mÃ©todo comprovado.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="pain-section section">
+  <section class="pain-section post-video-locked section">
     <div class="container">
       <div class="pain-intro reveal">
-        <span class="tag">Diagnóstico real</span>
-        <h2 class="section-title">Você já se encontrou em alguma<br><span class="blue">dessas situações?</span></h2>
+        <span class="tag">DiagnÃ³stico real</span>
+        <h2 class="section-title">VocÃª jÃ¡ se encontrou em alguma<br><span class="blue">dessas situaÃ§Ãµes?</span></h2>
         <div class="divider divider--center"></div>
       </div>
       <div class="pain-items">
         <div class="pain-item reveal reveal--d1">
-          <div class="pain-x">✕</div>
+          <div class="pain-x">â</div>
           <p>Dificuldade para prospectar leads qualificados e manter o funil abastecido com oportunidades reais.</p>
         </div>
         <div class="pain-item reveal reveal--d2">
-          <div class="pain-x">✕</div>
-          <p>Perde vendas no final do ciclo por não saber lidar com objeções como "preciso pensar" ou "está caro".</p>
+          <div class="pain-x">â</div>
+          <p>Perde vendas no final do ciclo por nÃ£o saber lidar com objeÃ§Ãµes como "preciso pensar" ou "estÃ¡ caro".</p>
         </div>
         <div class="pain-item reveal reveal--d3">
-          <div class="pain-x">✕</div>
-          <p>Metas inconsistentes: bate um mês, fica muito abaixo no outro, sem previsibilidade de receita.</p>
+          <div class="pain-x">â</div>
+          <p>Metas inconsistentes: bate um mÃªs, fica muito abaixo no outro, sem previsibilidade de receita.</p>
         </div>
         <div class="pain-item reveal reveal--d4">
-          <div class="pain-x">✕</div>
-          <p>Não tem um script de abordagem estruturado e improvisa nas ligações, perdendo confiança e conexão.</p>
+          <div class="pain-x">â</div>
+          <p>NÃ£o tem um script de abordagem estruturado e improvisa nas ligaÃ§Ãµes, perdendo confianÃ§a e conexÃ£o.</p>
         </div>
         <div class="pain-item reveal reveal--d1">
-          <div class="pain-x">✕</div>
+          <div class="pain-x">â</div>
           <p>Processo de onboarding lento: novos vendedores demoram meses para atingir a performance esperada.</p>
         </div>
         <div class="pain-item reveal reveal--d2">
-          <div class="pain-x">✕</div>
-          <p>Falta de clareza nas métricas e KPIs: não sabe identificar onde exatamente está perdendo negócios.</p>
+          <div class="pain-x">â</div>
+          <p>Falta de clareza nas mÃ©tricas e KPIs: nÃ£o sabe identificar onde exatamente estÃ¡ perdendo negÃ³cios.</p>
         </div>
       </div>
       <div class="pain-callout reveal">
-        <p><strong>Se você identificou pelo menos um desses cenários</strong>, este treinamento foi desenhado exatamente para resolver esses gargalos na raiz.</p>
+        <p><strong>Se vocÃª identificou pelo menos um desses cenÃ¡rios</strong>, este treinamento foi desenhado exatamente para resolver esses gargalos na raiz.</p>
       </div>
       <div class="pain-cta reveal">
         <a href="#inscricao" class="btn btn--blue btn--lg">Quero resolver esses problemas</a>
@@ -907,24 +951,24 @@
     </div>
   </section>
 
-  <section class="bridge-section">
+  <section class="bridge-section post-video-locked">
     <div class="container">
       <div class="bridge-inner reveal">
         <h2 class="section-title">O que muda depois do<br>Treinamento Full Sales?</h2>
         <div class="divider divider--center"></div>
-        <p>Em <strong>5 dias intensivos</strong>, você vai deixar de lado o improviso e construir uma base sólida de técnicas, scripts e processos que funcionam no mundo real.</p>
-        <p>Não é teoria genérica. É o <strong>método que a Full Sales usa</strong> para escalar times comerciais com previsibilidade e consistência — agora estruturado num treinamento acessível para qualquer membro da equipe.</p>
+        <p>Em <strong>5 dias intensivos</strong>, vocÃª vai deixar de lado o improviso e construir uma base sÃ³lida de tÃ©cnicas, scripts e processos que funcionam no mundo real.</p>
+        <p>NÃ£o Ã© teoria genÃ©rica. Ã o <strong>mÃ©todo que a Full Sales usa</strong> para escalar times comerciais com previsibilidade e consistÃªncia â agora estruturado num treinamento acessÃ­vel para qualquer membro da equipe.</p>
       </div>
     </div>
   </section>
 
-  <section class="modules-section section">
+  <section class="modules-section post-video-locked section">
     <div class="container">
       <div class="modules-header reveal">
-        <span class="tag">Conteúdo do treinamento</span>
+        <span class="tag">ConteÃºdo do treinamento</span>
         <h2 class="section-title">5 dias para transformar sua<br><span class="blue">performance em vendas</span></h2>
         <div class="divider divider--center"></div>
-        <p style="font-size:0.95rem;color:var(--text-muted);max-width:560px;margin:0 auto;">Cada módulo foi estruturado para gerar resultado prático imediato — do primeiro contato ao fechamento.</p>
+        <p style="font-size:0.95rem;color:var(--text-muted);max-width:560px;margin:0 auto;">Cada mÃ³dulo foi estruturado para gerar resultado prÃ¡tico imediato â do primeiro contato ao fechamento.</p>
       </div>
       <div class="modules-list">
         <div class="module-item reveal reveal--d1">
@@ -932,7 +976,7 @@
           <div class="module-content">
             <p class="module-day">Dia 1</p>
             <p class="module-title">Mentalidade e Fundamentos de Alta Performance</p>
-            <p class="module-desc">Construa a base psicológica do vendedor de alto nível: gestão de metas, rotina produtiva, mindset de crescimento e como se preparar para qualquer negociação.</p>
+            <p class="module-desc">Construa a base psicolÃ³gica do vendedor de alto nÃ­vel: gestÃ£o de metas, rotina produtiva, mindset de crescimento e como se preparar para qualquer negociaÃ§Ã£o.</p>
             <div class="module-tags">
               <span class="module-tag">Mentalidade</span>
               <span class="module-tag">Rotina</span>
@@ -944,10 +988,10 @@
           <div class="module-number">02</div>
           <div class="module-content">
             <p class="module-day">Dia 2</p>
-            <p class="module-title">Prospecção Inteligente e Geração de Pipeline</p>
+            <p class="module-title">ProspecÃ§Ã£o Inteligente e GeraÃ§Ã£o de Pipeline</p>
             <p class="module-desc">Aprenda a identificar o ICP (perfil ideal de cliente), dominar cold call, cold email e social selling para manter o funil sempre abastecido com leads qualificados.</p>
             <div class="module-tags">
-              <span class="module-tag">Prospecção</span>
+              <span class="module-tag">ProspecÃ§Ã£o</span>
               <span class="module-tag">Cold Call</span>
               <span class="module-tag">ICP</span>
               <span class="module-tag">LinkedIn</span>
@@ -958,12 +1002,12 @@
           <div class="module-number">03</div>
           <div class="module-content">
             <p class="module-day">Dia 3</p>
-            <p class="module-title">Abordagem, Qualificação e Diagnóstico Comercial</p>
-            <p class="module-desc">Domine o primeiro contato, conduza reuniões de descoberta eficientes com o método SPIN e qualifique oportunidades com precisão para não desperdiçar tempo.</p>
+            <p class="module-title">Abordagem, QualificaÃ§Ã£o e DiagnÃ³stico Comercial</p>
+            <p class="module-desc">Domine o primeiro contato, conduza reuniÃµes de descoberta eficientes com o mÃ©todo SPIN e qualifique oportunidades com precisÃ£o para nÃ£o desperdiÃ§ar tempo.</p>
             <div class="module-tags">
               <span class="module-tag">SPIN Selling</span>
-              <span class="module-tag">Qualificação</span>
-              <span class="module-tag">Reunião de Vendas</span>
+              <span class="module-tag">QualificaÃ§Ã£o</span>
+              <span class="module-tag">ReuniÃ£o de Vendas</span>
             </div>
           </div>
         </div>
@@ -971,12 +1015,12 @@
           <div class="module-number">04</div>
           <div class="module-content">
             <p class="module-day">Dia 4</p>
-            <p class="module-title">Gestão de Objeções e Negociação de Alto Valor</p>
-            <p class="module-desc">Aprenda a antecipar e neutralizar as principais objeções (preço, tempo, concorrente, decisor) e conduza negociações que preservam margens e geram valor para o cliente.</p>
+            <p class="module-title">GestÃ£o de ObjeÃ§Ãµes e NegociaÃ§Ã£o de Alto Valor</p>
+            <p class="module-desc">Aprenda a antecipar e neutralizar as principais objeÃ§Ãµes (preÃ§o, tempo, concorrente, decisor) e conduza negociaÃ§Ãµes que preservam margens e geram valor para o cliente.</p>
             <div class="module-tags">
-              <span class="module-tag">Objeções</span>
-              <span class="module-tag">Negociação</span>
-              <span class="module-tag">Ticket Médio</span>
+              <span class="module-tag">ObjeÃ§Ãµes</span>
+              <span class="module-tag">NegociaÃ§Ã£o</span>
+              <span class="module-tag">Ticket MÃ©dio</span>
             </div>
           </div>
         </div>
@@ -984,13 +1028,13 @@
           <div class="module-number">05</div>
           <div class="module-content">
             <p class="module-day">Dia 5</p>
-            <p class="module-title">Fechamento, Follow-up e Construção de Carteira</p>
-            <p class="module-desc">Técnicas de fechamento sem pressão, construção de um processo de follow-up que converte e como gerar recorrência e indicações para crescer sua carteira de forma sustentável.</p>
+            <p class="module-title">Fechamento, Follow-up e ConstruÃ§Ã£o de Carteira</p>
+            <p class="module-desc">TÃ©cnicas de fechamento sem pressÃ£o, construÃ§Ã£o de um processo de follow-up que converte e como gerar recorrÃªncia e indicaÃ§Ãµes para crescer sua carteira de forma sustentÃ¡vel.</p>
             <div class="module-tags">
               <span class="module-tag">Fechamento</span>
               <span class="module-tag">Follow-up</span>
-              <span class="module-tag">Recorrência</span>
-              <span class="module-tag">Indicações</span>
+              <span class="module-tag">RecorrÃªncia</span>
+              <span class="module-tag">IndicaÃ§Ãµes</span>
             </div>
           </div>
         </div>
@@ -1001,56 +1045,56 @@
     </div>
   </section>
 
-  <section class="benefits-section section">
+  <section class="benefits-section post-video-locked section">
     <div class="container">
       <div class="benefits-header reveal">
-        <span class="tag">O que você leva</span>
-        <h2 class="section-title">Tudo que você vai receber ao<br><span class="blue">se inscrever hoje</span></h2>
+        <span class="tag">O que vocÃª leva</span>
+        <h2 class="section-title">Tudo que vocÃª vai receber ao<br><span class="blue">se inscrever hoje</span></h2>
         <div class="divider divider--center"></div>
       </div>
       <div class="benefits-grid">
         <div class="benefit-card reveal reveal--d1">
-          <div class="benefit-icon">🎓</div>
+          <div class="benefit-icon">ð</div>
           <p class="benefit-name">5 aulas ao vivo</p>
-          <p class="benefit-desc">Sessões diárias de 1h30 com conteúdo denso, exercícios práticos e sessão de perguntas e respostas ao final de cada dia.</p>
+          <p class="benefit-desc">SessÃµes diÃ¡rias de 1h30 com conteÃºdo denso, exercÃ­cios prÃ¡ticos e sessÃ£o de perguntas e respostas ao final de cada dia.</p>
         </div>
         <div class="benefit-card reveal reveal--d2">
-          <div class="benefit-icon">🎥</div>
-          <p class="benefit-name">Gravações para sempre</p>
-          <p class="benefit-desc">Acesse todas as gravações das aulas sem prazo de expiração. Revise o conteúdo quando precisar, no seu ritmo.</p>
+          <div class="benefit-icon">ð¥</div>
+          <p class="benefit-name">GravaÃ§Ãµes para sempre</p>
+          <p class="benefit-desc">Acesse todas as gravaÃ§Ãµes das aulas sem prazo de expiraÃ§Ã£o. Revise o conteÃºdo quando precisar, no seu ritmo.</p>
         </div>
         <div class="benefit-card reveal reveal--d3">
-          <div class="benefit-icon">📋</div>
+          <div class="benefit-icon">ð</div>
           <p class="benefit-name">Scripts e templates prontos</p>
-          <p class="benefit-desc">Scripts de prospecção, e-mails de follow-up, roteiros de reunião e templates de proposta para usar imediatamente.</p>
+          <p class="benefit-desc">Scripts de prospecÃ§Ã£o, e-mails de follow-up, roteiros de reuniÃ£o e templates de proposta para usar imediatamente.</p>
         </div>
         <div class="benefit-card reveal reveal--d1">
-          <div class="benefit-icon">💬</div>
+          <div class="benefit-icon">ð¬</div>
           <p class="benefit-name">Grupo exclusivo no WhatsApp</p>
-          <p class="benefit-desc">Acesso ao grupo de alunos para networking, troca de experiências e suporte da equipe Full Sales durante o treinamento.</p>
+          <p class="benefit-desc">Acesso ao grupo de alunos para networking, troca de experiÃªncias e suporte da equipe Full Sales durante o treinamento.</p>
         </div>
         <div class="benefit-card reveal reveal--d2">
-          <div class="benefit-icon">📊</div>
-          <p class="benefit-name">Dashboard de métricas</p>
-          <p class="benefit-desc">Planilha estruturada para acompanhar seus KPIs, taxa de conversão e identificar gargalos no seu processo comercial.</p>
+          <div class="benefit-icon">ð</div>
+          <p class="benefit-name">Dashboard de mÃ©tricas</p>
+          <p class="benefit-desc">Planilha estruturada para acompanhar seus KPIs, taxa de conversÃ£o e identificar gargalos no seu processo comercial.</p>
         </div>
         <div class="benefit-card reveal reveal--d3">
-          <div class="benefit-icon">🏅</div>
-          <p class="benefit-name">Certificado de conclusão</p>
-          <p class="benefit-desc">Certificado digital da Full Sales System ao concluir o treinamento — reconhecimento do seu desenvolvimento profissional.</p>
+          <div class="benefit-icon">ð</div>
+          <p class="benefit-name">Certificado de conclusÃ£o</p>
+          <p class="benefit-desc">Certificado digital da Full Sales System ao concluir o treinamento â reconhecimento do seu desenvolvimento profissional.</p>
         </div>
       </div>
       <div class="benefits-cta reveal">
-        <a href="#inscricao" class="btn btn--blue btn--lg">Quero todos esses benefícios</a>
+        <a href="#inscricao" class="btn btn--blue btn--lg">Quero todos esses benefÃ­cios</a>
       </div>
     </div>
   </section>
 
-  <section class="instructor-section">
+  <section class="instructor-section post-video-locked">
     <div class="container">
       <div class="instructor-inner">
         <div class="instructor-photo-wrap reveal">
-          <div class="instructor-photo-placeholder">👤</div>
+          <div class="instructor-photo-placeholder">ð¤</div>
           <div class="instructor-badge-wrap">
             <p class="instructor-badge-num">+500</p>
             <p class="instructor-badge-text">times treinados<br>em todo Brasil</p>
@@ -1059,13 +1103,13 @@
         <div class="instructor-content reveal reveal--d2">
           <span class="tag">Seu instrutor</span>
           <h2 class="instructor-name">[Nome do Instrutor]</h2>
-          <p class="instructor-role">Fundador & Head de Treinamento · Full Sales System</p>
+          <p class="instructor-role">Fundador & Head de Treinamento Â· Full Sales System</p>
           <div class="divider instructor-divider"></div>
           <p class="instructor-bio">
-            Com mais de 10 anos de experiência em vendas B2B, construiu e liderou times comerciais em empresas de diferentes segmentos — do SaaS ao mercado imobiliário.
+            Com mais de 10 anos de experiÃªncia em vendas B2B, construiu e liderou times comerciais em empresas de diferentes segmentos â do SaaS ao mercado imobiliÃ¡rio.
           </p>
           <p class="instructor-bio">
-            Criou o método Full Sales após identificar os principais gargalos que impedem times comerciais de atingir consistência. Hoje, ajuda empresas a estruturar processos de vendas escaláveis e previsíveis.
+            Criou o mÃ©todo Full Sales apÃ³s identificar os principais gargalos que impedem times comerciais de atingir consistÃªncia. Hoje, ajuda empresas a estruturar processos de vendas escalÃ¡veis e previsÃ­veis.
           </p>
           <div class="instructor-stats">
             <div class="instructor-stat">
@@ -1078,7 +1122,7 @@
             </div>
             <div class="instructor-stat">
               <p class="instructor-stat-num">98%</p>
-              <p class="instructor-stat-label">de aprovação nas turmas</p>
+              <p class="instructor-stat-label">de aprovaÃ§Ã£o nas turmas</p>
             </div>
           </div>
         </div>
@@ -1086,67 +1130,67 @@
     </div>
   </section>
 
-  <section class="testimonials-section section">
+  <section class="testimonials-section post-video-locked section">
     <div class="container">
       <div class="testimonials-header reveal">
         <span class="tag">Depoimentos</span>
-        <h2 class="section-title">O que dizem quem já<br><span class="blue">passou pelo treinamento</span></h2>
+        <h2 class="section-title">O que dizem quem jÃ¡<br><span class="blue">passou pelo treinamento</span></h2>
         <div class="divider divider--center"></div>
       </div>
       <div class="testi-carousel-wrap reveal">
         <div class="testi-carousel" id="testiCarousel">
           <div class="testi-card">
-            <p class="testi-stars">★★★★★</p>
-            <p class="testi-text">"Apliquei os scripts de prospecção no mesmo dia e consegui 3 reuniões qualificadas em 48 horas. O conteúdo é extremamente prático e direto ao ponto."</p>
+            <p class="testi-stars">âââââ</p>
+            <p class="testi-text">"Apliquei os scripts de prospecÃ§Ã£o no mesmo dia e consegui 3 reuniÃµes qualificadas em 48 horas. O conteÃºdo Ã© extremamente prÃ¡tico e direto ao ponto."</p>
             <div class="testi-author">
-              <div class="testi-avatar">😊</div>
+              <div class="testi-avatar">ð</div>
               <div>
                 <p class="testi-name">Carlos Mendes</p>
-                <p class="testi-role">Executivo de Vendas · São Paulo, SP</p>
+                <p class="testi-role">Executivo de Vendas Â· SÃ£o Paulo, SP</p>
               </div>
             </div>
           </div>
           <div class="testi-card">
-            <p class="testi-stars">★★★★★</p>
-            <p class="testi-text">"Como gestora, finalmente tenho uma linguagem comum com todo o time. O dashboard de métricas transformou nossas reuniões de pipeline. Recomendo demais!"</p>
+            <p class="testi-stars">âââââ</p>
+            <p class="testi-text">"Como gestora, finalmente tenho uma linguagem comum com todo o time. O dashboard de mÃ©tricas transformou nossas reuniÃµes de pipeline. Recomendo demais!"</p>
             <div class="testi-author">
-              <div class="testi-avatar">👩</div>
+              <div class="testi-avatar">ð©</div>
               <div>
                 <p class="testi-name">Fernanda Lima</p>
-                <p class="testi-role">Gerente Comercial · Belo Horizonte, MG</p>
+                <p class="testi-role">Gerente Comercial Â· Belo Horizonte, MG</p>
               </div>
             </div>
           </div>
           <div class="testi-card">
-            <p class="testi-stars">★★★★★</p>
-            <p class="testi-text">"Aumentei minha taxa de conversão de 12% para 28% em dois meses depois do treinamento. O módulo de objeções valeu por todo o investimento."</p>
+            <p class="testi-stars">âââââ</p>
+            <p class="testi-text">"Aumentei minha taxa de conversÃ£o de 12% para 28% em dois meses depois do treinamento. O mÃ³dulo de objeÃ§Ãµes valeu por todo o investimento."</p>
             <div class="testi-author">
-              <div class="testi-avatar">🧑</div>
+              <div class="testi-avatar">ð§</div>
               <div>
                 <p class="testi-name">Ricardo Oliveira</p>
-                <p class="testi-role">SDR · Curitiba, PR</p>
+                <p class="testi-role">SDR Â· Curitiba, PR</p>
               </div>
             </div>
           </div>
           <div class="testi-card">
-            <p class="testi-stars">★★★★★</p>
-            <p class="testi-text">"Era cético com treinamentos online, mas esse mudou minha visão. Conteúdo denso, instrutor acessível e comunidade muito engajada. Vale cada centavo."</p>
+            <p class="testi-stars">âââââ</p>
+            <p class="testi-text">"Era cÃ©tico com treinamentos online, mas esse mudou minha visÃ£o. ConteÃºdo denso, instrutor acessÃ­vel e comunidade muito engajada. Vale cada centavo."</p>
             <div class="testi-author">
-              <div class="testi-avatar">👨</div>
+              <div class="testi-avatar">ð¨</div>
               <div>
                 <p class="testi-name">Thiago Santos</p>
-                <p class="testi-role">Closer · Florianópolis, SC</p>
+                <p class="testi-role">Closer Â· FlorianÃ³polis, SC</p>
               </div>
             </div>
           </div>
           <div class="testi-card">
-            <p class="testi-stars">★★★★★</p>
-            <p class="testi-text">"Entrei na empresa há 3 meses e esse treinamento me deu o embasamento que precisava para entrar no ritmo do time muito mais rápido."</p>
+            <p class="testi-stars">âââââ</p>
+            <p class="testi-text">"Entrei na empresa hÃ¡ 3 meses e esse treinamento me deu o embasamento que precisava para entrar no ritmo do time muito mais rÃ¡pido."</p>
             <div class="testi-author">
-              <div class="testi-avatar">👩‍💼</div>
+              <div class="testi-avatar">ð©âð¼</div>
               <div>
                 <p class="testi-name">Juliana Costa</p>
-                <p class="testi-role">Pré-vendas · Rio de Janeiro, RJ</p>
+                <p class="testi-role">PrÃ©-vendas Â· Rio de Janeiro, RJ</p>
               </div>
             </div>
           </div>
@@ -1155,7 +1199,7 @@
           <button class="testi-btn" id="testiPrev" aria-label="Anterior">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
           </button>
-          <button class="testi-btn" id="testiNext" aria-label="Próximo">
+          <button class="testi-btn" id="testiNext" aria-label="PrÃ³ximo">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
         </div>
@@ -1163,55 +1207,55 @@
     </div>
   </section>
 
-  <section class="faq-section section">
+  <section class="faq-section post-video-locked section">
     <div class="container">
       <div class="faq-header reveal">
         <span class="tag">Perguntas frequentes</span>
-        <h2 class="section-title">Tire suas <span class="blue">dúvidas</span></h2>
+        <h2 class="section-title">Tire suas <span class="blue">dÃºvidas</span></h2>
         <div class="divider divider--center"></div>
       </div>
       <div class="faq-list">
         <div class="faq-item reveal">
           <div class="faq-question">
-            Para quem é esse treinamento?
+            Para quem Ã© esse treinamento?
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              O treinamento é voltado para membros do time comercial da Full Sales em qualquer nível — SDRs, closers, executivos de conta e gestores. Também é ideal para profissionais que estão migrando para a área de vendas e querem uma base sólida desde o início.
+              O treinamento Ã© voltado para membros do time comercial da Full Sales em qualquer nÃ­vel â SDRs, closers, executivos de conta e gestores. TambÃ©m Ã© ideal para profissionais que estÃ£o migrando para a Ã¡rea de vendas e querem uma base sÃ³lida desde o inÃ­cio.
             </div>
           </div>
         </div>
         <div class="faq-item reveal reveal--d1">
           <div class="faq-question">
-            As aulas são ao vivo ou gravadas?
+            As aulas sÃ£o ao vivo ou gravadas?
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              As aulas acontecem ao vivo durante os 5 dias do treinamento, com sessão de perguntas ao final de cada encontro. Todas as aulas são gravadas e ficam disponíveis para revisão sem prazo de expiração.
+              As aulas acontecem ao vivo durante os 5 dias do treinamento, com sessÃ£o de perguntas ao final de cada encontro. Todas as aulas sÃ£o gravadas e ficam disponÃ­veis para revisÃ£o sem prazo de expiraÃ§Ã£o.
             </div>
           </div>
         </div>
         <div class="faq-item reveal reveal--d2">
           <div class="faq-question">
-            Qual é a carga horária total do treinamento?
+            Qual Ã© a carga horÃ¡ria total do treinamento?
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Cada dia tem 1h30 de aula ao vivo, totalizando 7h30 de conteúdo direto. Além disso, há materiais complementares, scripts e exercícios práticos para aplicar entre os módulos.
+              Cada dia tem 1h30 de aula ao vivo, totalizando 7h30 de conteÃºdo direto. AlÃ©m disso, hÃ¡ materiais complementares, scripts e exercÃ­cios prÃ¡ticos para aplicar entre os mÃ³dulos.
             </div>
           </div>
         </div>
         <div class="faq-item reveal reveal--d3">
           <div class="faq-question">
-            Preciso ter experiência em vendas para participar?
+            Preciso ter experiÃªncia em vendas para participar?
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Não é necessário ter experiência prévia. O treinamento começa pelos fundamentos e avança para técnicas avançadas, sendo adequado tanto para iniciantes quanto para profissionais experientes que querem sistematizar seu processo.
+              NÃ£o Ã© necessÃ¡rio ter experiÃªncia prÃ©via. O treinamento comeÃ§a pelos fundamentos e avanÃ§a para tÃ©cnicas avanÃ§adas, sendo adequado tanto para iniciantes quanto para profissionais experientes que querem sistematizar seu processo.
             </div>
           </div>
         </div>
@@ -1222,7 +1266,7 @@
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Sim! Ao completar o treinamento, você recebe um certificado digital da Full Sales System que pode ser adicionado ao seu LinkedIn e currículo, comprovando sua qualificação em vendas de alta performance.
+              Sim! Ao completar o treinamento, vocÃª recebe um certificado digital da Full Sales System que pode ser adicionado ao seu LinkedIn e currÃ­culo, comprovando sua qualificaÃ§Ã£o em vendas de alta performance.
             </div>
           </div>
         </div>
@@ -1233,7 +1277,7 @@
           </div>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Após a confirmação da inscrição, você recebe um e-mail com o link de acesso ao grupo do WhatsApp e à área de membros onde estarão disponíveis todos os scripts, templates e gravações das aulas.
+              ApÃ³s a confirmaÃ§Ã£o da inscriÃ§Ã£o, vocÃª recebe um e-mail com o link de acesso ao grupo do WhatsApp e Ã  Ã¡rea de membros onde estarÃ£o disponÃ­veis todos os scripts, templates e gravaÃ§Ãµes das aulas.
             </div>
           </div>
         </div>
@@ -1241,30 +1285,30 @@
     </div>
   </section>
 
-  <section class="final-cta">
+  <section class="final-cta post-video-locked">
     <div class="container">
-      <div class="final-cta-inner reveal">
-        <span class="tag" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:#fff;">Última chamada</span>
-        <h2 class="section-title">Pronto para elevar o nível do seu time comercial?</h2>
-        <p>Garanta agora sua vaga no treinamento e comece a transformação que vai tornar você e sua equipe referência em vendas de alta performance.</p>
+      <div class="final-cta post-video-locked-inner reveal">
+        <span class="tag" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);color:#fff;">Ãltima chamada</span>
+        <h2 class="section-title">Pronto para elevar o nÃ­vel do seu time comercial?</h2>
+        <p>Garanta agora sua vaga no treinamento e comece a transformaÃ§Ã£o que vai tornar vocÃª e sua equipe referÃªncia em vendas de alta performance.</p>
         <a href="#inscricao" class="btn btn--white btn--lg">Garantir minha vaga agora</a>
-        <div class="final-spots"><span class="dot"></span> Vagas limitadas · Não perca essa turma</div>
+        <div class="final-spots"><span class="dot"></span> Vagas limitadas Â· NÃ£o perca essa turma</div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer post-video-locked">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-fap01/1773077501/imagens/desktop/23581-f13853e2ba9567b10103f3704fc9e218.png" alt="Full Sales System" />
+          <img src="LOGO-(Azul)---Full-Sales.png" alt="Full Sales System" />
         </div>
         <div class="footer-links">
-          <a href="#">Política de Privacidade</a>
+          <a href="#">PolÃ­tica de Privacidade</a>
           <a href="#">Termos de Uso</a>
           <a href="#">Contato</a>
         </div>
-        <p class="footer-copy">© 2025 Full Sales System. Todos os direitos reservados.</p>
+        <p class="footer-copy">Â© 2025 Full Sales System. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
@@ -1291,5 +1335,66 @@
       carousel.scrollBy({ left: -338, behavior: 'smooth' });
     });
   </script>
+
+  <script>
+  (function() {
+    // Mover o player para a tela pré-vídeo
+    var pvs = document.getElementById('pre-video-screen');
+    var heroVideo = document.querySelector('.hero-video');
+    if (heroVideo && pvs) pvs.appendChild(heroVideo);
+
+    // Botão de teste (remover quando vídeo real estiver configurado)
+    var simBtn = document.createElement('button');
+    simBtn.id = 'sim-btn';
+    simBtn.textContent = '▶ Simular fim do vídeo (teste)';
+    simBtn.onclick = unlockContent;
+    if (pvs) pvs.appendChild(simBtn);
+
+    // Ocultar o hero original (agora só tem o hero-cta-area)
+    var hero = document.querySelector('.hero');
+    if (hero) hero.style.display = 'none';
+
+    function unlockContent() {
+      // Ocultar tela pré-vídeo
+      pvs.style.display = 'none';
+      // Desbloquear todos os elementos
+      document.querySelectorAll('.post-video-locked').forEach(function(el) {
+        el.classList.add('unlocked');
+      });
+      // Restaurar hero
+      if (hero) hero.style.display = '';
+      // Scroll topo
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // YouTube iframe API
+    var yt = document.createElement('script');
+    yt.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(yt);
+    window.onYouTubeIframeAPIReady = function() {
+      document.querySelectorAll('iframe[src*="youtube"]').forEach(function(iframe) {
+        new YT.Player(iframe, { events: { onStateChange: function(e) {
+          if (e.data === YT.PlayerState.ENDED) unlockContent();
+        }}});
+      });
+    };
+    // Vimeo
+    if (document.querySelector('iframe[src*="vimeo"]')) {
+      var vs = document.createElement('script');
+      vs.src = 'https://player.vimeo.com/api/player.js';
+      vs.onload = function() {
+        document.querySelectorAll('iframe[src*="vimeo"]').forEach(function(iframe) {
+          new Vimeo.Player(iframe).on('ended', unlockContent);
+        });
+      };
+      document.head.appendChild(vs);
+    }
+    // HTML5 nativo
+    document.querySelectorAll('video').forEach(function(v) {
+      v.addEventListener('ended', unlockContent);
+    });
+  })();
+  </script>
+
 </body>
 </html>
