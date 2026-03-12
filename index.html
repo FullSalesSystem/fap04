@@ -18,15 +18,15 @@
       --blue: #EF0835;
       --blue-dark: #8F001C;
       --blue-navy: #1A0A0E;
-      --blue-glow: rgba(239, 8, 53, 0.07);
-      --bg-deep: #ffffff;
-      --bg-dark: #FEF5F7;
-      --bg-card: #ffffff;
-      --bg-card2: #FFE8EC;
-      --border: rgba(239, 8, 53, 0.12);
+      --blue-glow: rgba(239, 8, 53, 0.12);
+      --bg-deep: #000000;
+      --bg-dark: #0a0a0a;
+      --bg-card: #111111;
+      --bg-card2: #1a0a0e;
+      --border: rgba(239, 8, 53, 0.25);
       --border-blue: rgba(239, 8, 53, 0.3);
-      --text-primary: #0A0A1A;
-      --text-muted: #4A5470;
+      --text-primary: #ffffff;
+      --text-muted: #aaaaaa;
     }
 
     html { scroll-behavior: smooth; }
@@ -85,18 +85,18 @@
     .btn--blue {
       background: var(--blue);
       color: #fff;
-      box-shadow: 0 4px 16px rgba(16,89,255,0.22);
+      box-shadow: 0 4px 16px rgba(239,8,53,0.22);
     }
     .btn--blue:hover {
       background: var(--blue-dark);
       transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(16,89,255,0.32);
+      box-shadow: 0 6px 24px rgba(239,8,53,0.32);
       color: #fff;
     }
     .btn--ghost {
       background: transparent;
       color: var(--text-primary);
-      border: 1px solid rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.18);
     }
     .btn--ghost:hover { border-color: var(--blue); background: var(--blue-glow); color: var(--blue); }
     .btn--lg { font-size: 1.1rem; padding: 18px 48px; }
@@ -117,7 +117,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,0.96);
+      background: rgba(0,0,0,0.96);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
       padding: 16px 0;
@@ -132,12 +132,12 @@
       flex-direction: column;
       align-items: stretch;
       overflow: hidden;
-      background: var(--bg-dark);
+      background: #000000;
     }
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(16,89,255,0.06), transparent);
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(239,8,53,0.08), transparent);
       pointer-events: none;
     }
     .hero .container {
@@ -160,7 +160,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(16,89,255,0.10);
+      background: rgba(239,8,53,0.10);
       border: 1px solid var(--border-blue);
       color: var(--blue);
       font-size: 0.7rem;
@@ -296,7 +296,7 @@
       position: absolute;
       bottom: 0; left: 0; right: 0;
       height: 200px;
-      background: radial-gradient(ellipse 60% 100% at 50% 100%, rgba(16,89,255,0.04), transparent);
+      background: radial-gradient(ellipse 60% 100% at 50% 100%, rgba(239,8,53,0.04), transparent);
       pointer-events: none;
     }
     .pain-intro { max-width: 100%; margin-bottom: 48px; text-align: center; }
@@ -771,7 +771,7 @@
       justify-content: center;
       min-height: 100vh;
       padding: 40px 24px;
-      background: #fff;
+      background: #000;
       box-sizing: border-box;
     }
     #pre-video-screen > img.pvs-logo {
@@ -827,9 +827,8 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container">
-       Treinamento Exclusivo · Vagas Limitadas</span>
 
-      <div class="hero-video reveal reveal--d1">
+            <div class="hero-video reveal reveal--d1">
         <div id="vid_PLACEHOLDER" style="position:relative;width:100%;padding:56.25% 0 0;background:#000;border-radius:12px 12px 0 0;overflow:hidden;">
           <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1A0A0E 0%,#0047CC 100%);">
             <div style="text-align:center;color:rgba(255,255,255,0.5);">
