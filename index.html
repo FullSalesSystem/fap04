@@ -780,21 +780,7 @@
   </script>
 
   <!-- YouTube IFrame API -->
+    <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    function onYouTubeIframeAPIReady() {
-      const iframe = document.getElementById('ytPlayer');
-      if (!iframe) return;
-      new YT.Player(iframe, {
-        events: {
-          onStateChange: function(event) {
-            if (event.data === YT.PlayerState.ENDED) {
-              revealAfterVideo();
-            }
-          }
-        }
-      });
-    }
-  </script>
 </body>
 </html>
